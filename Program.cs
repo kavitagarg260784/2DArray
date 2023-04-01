@@ -7,7 +7,7 @@ char[,] Array = new char[3, 4]
 { 'd', 'b', 'a', 'f'}, 
 { 'c', 'd', 'h', 'i' } };
 
-Console.WriteLine("Enter letters");
+Console.WriteLine("Enter letters"); // for example bc, df
 string str = Console.ReadLine();
 char letter1 = str[0];
 char letter2 = str[1];
@@ -19,7 +19,7 @@ for (int i= 0; i<3; i++)
     {
         found = false;
 
-        if ((Array[i ,j] == letter1) & (Array[i, (j+1)] ==letter2))
+        if ((Array[i ,j] == letter1) & (Array[i, (j+1)] ==letter2)) // enter into IF condition if both letters are next to each other
 
             {
 
@@ -32,11 +32,11 @@ for (int i= 0; i<3; i++)
             Console.WriteLine($"position y of {letter2} is { z}",letter2 ,z);
                
                  found = true;  
-                break;
+                break;  //coming out of loop if both letters are next to each other
             }
-            else
+            else  
             {
-            // Console.WriteLine("not next to each other");
+           
             continue;
             }
 
